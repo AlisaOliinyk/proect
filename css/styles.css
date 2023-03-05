@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #FFFFFF;
     color: var(--primary-text-color);
     font-family: 'Roboto';
@@ -80,11 +80,11 @@ body {
             align-items: center;
             justify-content: center;
         }
-
+/* 
 
 
                 /* About kitchen */
-                .container {
+                /* .container {
                     width: 100%;
                     padding-top: 64px;
                     padding-bottom: 64px;
@@ -139,4 +139,86 @@ body {
                     .small-img {
                         display: block;
                     }
-                }
+                }  */
+
+
+.container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
+.small-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.text {
+    display: block;
+}
+
+.description,
+.description-text {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.description {
+    margin-top: 32px;
+}
+
+.description-text {
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .section-kitchen {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .img-list {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    .img-large {
+        margin-top: 20px;
+        margin-left: 32px;
+    }
+
+
+    .small-img {
+        display: flex;
+        flex-direction: column;
+    }
+}
