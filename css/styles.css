@@ -1,0 +1,142 @@
+body {
+    background-color: #FFFFFF;
+    color: var(--primary-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: grid;
+    width: 100%;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        width: 1440px;
+    }
+
+}
+
+.text {
+    display: block;
+}
+
+.description,
+.description-text {
+    display: flex;
+    flex-direction: column;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.33;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #000000;
+}
+
+.description {
+    margin-top: 32px;
+}
+
+.description-text {
+    margin-top: 24px;
+}
+
+.large-img {
+    display: grid;
+    margin-bottom: 20px;
+}
+
+.small-img {
+        width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+                /* About kitchen */
+                .container {
+                    width: 100%;
+                    padding-top: 64px;
+                    padding-bottom: 64px;
+                }
+        
+        
+                .small-img {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    gap: 20px;
+                    align-items: center;
+                    width: 100%;
+                }
+        
+                .text {
+                    display: block;
+                }
+        
+                .description,
+                .description-text {
+                    display: flex;
+                    flex-direction: column;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    letter-spacing: -0.02em;
+                    text-transform: uppercase;
+                    color: #000000;
+                }
+        
+                .description {
+                    margin-top: 32px;
+                }
+        
+                .description-text {
+                    margin-top: 24px;
+                }
+        
+                @media screen and (min-width: 768px) {
+                    .container {
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+        
+                    .img-list {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        justify-content: flex-end;
+                    }
+        
+                    .small-img {
+                        display: block;
+                    }
+                }
